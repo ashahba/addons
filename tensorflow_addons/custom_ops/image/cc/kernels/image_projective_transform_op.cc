@@ -119,7 +119,7 @@ class ImageProjectiveTransformV2 : public OpKernel {
 };
 
 #define REGISTER(TYPE)                                        \
-  REGISTER_KERNEL_BUILDER(Name("ImageProjectiveTransformV2")  \
+  REGISTER_KERNEL_BUILDER(Name("Addons>ImageProjectiveTransformV2")  \
                               .Device(DEVICE_CPU)             \
                               .TypeConstraint<TYPE>("dtype"), \
                           ImageProjectiveTransformV2<CPUDevice, TYPE>)

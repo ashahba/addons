@@ -128,7 +128,7 @@ REGISTER_OP("EuclideanDistanceTransform")
     .Doc(EuclideanDistanceTransformDoc);
 
 // V2 op supports output_shape.
-REGISTER_OP("ImageProjectiveTransformV2")
+REGISTER_OP("Addons>ImageProjectiveTransformV2")
     .Input("images: dtype")
     .Input("transforms: float32")
     .Input("output_shape: int32")
